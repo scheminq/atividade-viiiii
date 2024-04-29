@@ -1,0 +1,13 @@
+<script>
+    let idade = parseInt(prompt("Qual é a sua idade?"));
+    let EstaNaLista = prompt("Você está na lista de convidados? (sim/não)").toLowerCase();
+
+    if (idade >= 18 && (EstaNaLista === "sim" || EstaNaLista === "s"))
+    {
+        alert("Acesso concedido!");
+    }
+    else 
+    {
+        alert("Desculpe, você não pode acessar a festa.");
+    }
+</script>
