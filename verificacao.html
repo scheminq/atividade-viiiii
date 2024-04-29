@@ -6,9 +6,9 @@
 
 let idade = prompt("Insira sua idade");
 let lista = prompt("Você está na lista de convidados?");
-let listaVIP = prompt("Você está na lista VIP?");
+let listaVIP = prompt("Você está na lista VIP?").toLowerCase();
 
-if (idade >= 18 && listaVIP === "sim" || lista === "sim")
+if (idade >= 18 && listaVIP === "sim" || "S" || lista === "sim" || "S")
 {
     alert("Acesso concedido!");
 }
